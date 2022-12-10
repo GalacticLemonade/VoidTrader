@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "voidtrader",
+  "version": "${version}",
+  "name": "Voidtrader",
+  "description": "Void Trading mod for gorillaman326",
+  "authors": [
+    "GalacticLemonade"
+  ],
+  "contact": {
+    "repo": "https://github.com/GalacticLemonade/VoidTrader"
+  },
+  "license": "MIT",
+  "icon": "assets/voidtrader/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.galacticlemon.voidtrader.client.VoidtraderClient"
+    ],
+    "main": [
+      "me.galacticlemon.voidtrader.Voidtrader"
+    ]
+  },
+  "mixins": [
+    "voidtrader.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
